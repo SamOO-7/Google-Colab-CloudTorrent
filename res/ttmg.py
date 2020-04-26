@@ -408,7 +408,9 @@ def updateCheck(self, Version):
     currentVersion = check.getVersion("currentVersion")
     message = check.getMessage("message")
 
-    if Version != currentVersion:
+    # https://raw.githubusercontent.com/biplobsd/Google-Colab-CloudTorrent/master/update.xml
+    # due to the file above is unreachable so we ignore update checking for a while    
+    if Version != currentVersion and False:
         from IPython.display import HTML
 
         print("Script Update Checker: Version "+currentVersion+" "+message+" Your version: "+Version+"")
